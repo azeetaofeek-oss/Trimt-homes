@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b35">
+  <title>Admin Dashboard | TRIMT HOMES</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<div class="dashboard-layout">
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="dashboard-brand"><span class="brand-icon">T</span><span><strong>TRIMT</strong><small>HOMES ADMIN</small></span></a>
+    <div class="sidebar-label">MAIN MENU</div>
+    <nav class="sidebar-nav" aria-label="Main menu">
+      <a href="#overview" class="nav-link active" data-section="overview"><span>▦</span>Overview</a>
+      <a href="#properties" class="nav-link" data-section="properties"><span>⌂</span>Properties</a>
+      <a href="#enquiries" class="nav-link" data-section="enquiries"><span>✉</span>Enquiries</a>
+      <a href="#investments" class="nav-link" data-section="investments"><span>↗</span>Investments</a>
+      <a href="#customers" class="nav-link" data-section="customers"><span>♙</span>Customers</a>
+    </nav>
+    <div class="sidebar-label">MANAGEMENT</div>
+    <nav class="sidebar-nav" aria-label="Management">
+      <a href="#reports" class="nav-link" data-section="reports"><span>▤</span>Reports</a>
+      <a href="#settings" class="nav-link" data-section="settings"><span>⚙</span>Settings</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="admin-profile"><div class="admin-avatar">TH</div><div><strong>Administrator</strong><small>TRIMT HOMES</small></div></div><a href="index.html" class="back-website">← Back to Website</a></div>
+  </aside>
+  <main class="dashboard-main">
+    <header class="dashboard-header"><button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar">☰</button><div class="header-title"><span>Management</span><h1>Dashboard Overview</h1></div><div class="header-actions"><button class="notification-button" aria-label="Notifications">♧<span></span></button><div class="header-user"><div class="admin-avatar">TH</div><div><strong>Administrator</strong><small>Admin account preview</small></div></div></div></header>
+    <section class="dashboard-section active" id="overview">
+      <div class="welcome-section"><div><p class="eyebrow">WELCOME BACK</p><h2>Good day, Administrator.</h2><p>Here is an overview of your TRIMT HOMES website.</p></div><a href="index.html#properties" class="primary-button">View Website ↗</a></div>
+      <div class="stats-grid">
+        <article class="stat-card"><div class="stat-top"><span>Total Properties</span><span class="stat-icon blue">⌂</span></div><h3>24</h3><p class="stat-note">Sample dashboard figure</p></article>
+        <article class="stat-card"><div class="stat-top"><span>Total Enquiries</span><span class="stat-icon cyan">✉</span></div><h3>86</h3><p class="stat-note">Sample dashboard figure</p></article>
+        <article class="stat-card"><div class="stat-top"><span>Investment Leads</span><span class="stat-icon purple">↗</span></div><h3>18</h3><p class="stat-note">Sample dashboard figure</p></article>
+        <article class="stat-card"><div class="stat-top"><span>Registered Customers</span><span class="stat-icon orange">♙</span></div><h3>42</h3><p class="stat-note">Sample dashboard figure</p></article>
+      </div>
+      <div class="section-heading"><div><h2>Quick Actions</h2><p>Manage important areas of your business.</p></div></div>
+      <div class="quick-actions"><button class="quick-action" data-open="properties"><span class="quick-icon">＋</span><strong>Manage Properties</strong><small>View property listings</small></button><button class="quick-action" data-open="enquiries"><span class="quick-icon">✉</span><strong>View Enquiries</strong><small>Review customer messages</small></button><button class="quick-action" data-open="investments"><span class="quick-icon">↗</span><strong>Investment Leads</strong><small>Review investment interest</small></button></div>
+      <div class="section-heading"><div><h2>Recent Activity</h2><p>Example activity for the dashboard preview.</p></div></div>
+      <div class="table-card"><div class="table-responsive"><table><thead><tr><th>Activity</th><th>Category</th><th>Status</th><th>Date</th></tr></thead><tbody><tr><td>New property enquiry</td><td>Property</td><td><span class="status pending">Pending</span></td><td>Today</td></tr><tr><td>Investment interest received</td><td>Investment</td><td><span class="status reviewed">Review</span></td><td>Yesterday</td></tr><tr><td>New leasing enquiry</td><td>Leasing</td><td><span class="status pending">Pending</span></td><td>Yesterday</td></tr></tbody></table></div></div>
+    </section>
+    <section class="dashboard-section" id="properties"><div class="section-heading"><div><p class="eyebrow">PROPERTY MANAGEMENT</p><h2>Properties</h2><p>Manage your real estate listings.</p></div><button class="primary-button" id="add-property-button">+ Add Property</button></div><div class="empty-state"><span>⌂</span><h3>Property management</h3><p>Your property listings will appear here when database integration is connected.</p></div></section>
+    <section class="dashboard-section" id="enquiries"><div class="section-heading"><div><p class="eyebrow">CUSTOMER MESSAGES</p><h2>Enquiries</h2><p>Review messages from interested customers.</p></div></div><div class="empty-state"><span>✉</span><h3>No live enquiries yet</h3><p>Customer enquiries will appear here after the database is connected.</p></div></section>
+    <section class="dashboard-section" id="investments"><div class="section-heading"><div><p class="eyebrow">INVESTOR MANAGEMENT</p><h2>Investment Leads</h2><p>Manage investment enquiries and interested investors.</p></div></div><div class="empty-state"><span>↗</span><h3>Investment management</h3><p>Investment enquiries and investor records will appear here after database integration.</p></div></section>
+    <section class="dashboard-section" id="customers"><div class="section-heading"><div><p class="eyebrow">CUSTOMER MANAGEMENT</p><h2>Customers</h2><p>Manage registered customer information.</p></div></div><div class="empty-state"><span>♙</span><h3>Customer records</h3><p>Customer accounts will appear here after authentication and database integration.</p></div></section>
+    <section class="dashboard-section" id="reports"><div class="section-heading"><div><p class="eyebrow">BUSINESS PERFORMANCE</p><h2>Reports</h2><p>Review your business performance and activity.</p></div></div><div class="empty-state"><span>▤</span><h3>Reports and analytics</h3><p>Live business reports will be available when real website data is connected.</p></div></section>
+    <section class="dashboard-section" id="settings"><div class="section-heading"><div><p class="eyebrow">ACCOUNT MANAGEMENT</p><h2>Settings</h2><p>Manage your website administration settings.</p></div></div><div class="settings-card"><h3>Business Information</h3><div class="settings-item"><span>Business Name</span><strong>TRIMT HOMES</strong></div><div class="settings-item"><span>Parent Company</span><strong>Trimt Olawole Limited</strong></div><div class="settings-item"><span>Website</span><strong>TRIMT HOMES</strong></div><p class="settings-note">These are preview details. Connect the backend before enabling live account settings.</p></div></section>
+    <footer class="dashboard-footer">© <span id="dashboard-year"></span> TRIMT HOMES. All rights reserved.</footer>
+  </main>
+</div>
+<script src="dashboard.js"></script>
+</body>
+</html>
